@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","2774","Login Attempt with Invalid Credentials","chromium","2026-02-02","passed","2026-02-02","Login Tests","login.spec.js","",""
+"","5324","Verify Admin Header is Visible","chromium","2026-02-02","passed","2026-02-02","Admin Tests","admin.spec.js","",""
+"","31324","Admin can create and search user","chromium","2026-02-02","passed","2026-02-02","Admin Tests","admin.spec.js","",""
+"","24406","Successful Login with ESS Credentials","chromium","2026-02-02","passed","2026-02-02","Login Tests","login.spec.js","",""
+"","3338","Successful Login with Admin Credentials","chromium","2026-02-02","passed","2026-02-02","Login Tests","login.spec.js","",""
+"","40686","Admin can add, update and delete employee","chromium","2026-02-02","passed","2026-02-02","Employee Tests","employee.spec.js","",""
