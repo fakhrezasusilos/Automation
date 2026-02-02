@@ -1,7 +1,6 @@
 import { expect } from '@playwright/test';
 import EmployeePage from '../locator/EmployeePage.js';
 import { elementIsVisible, elementClick, elementAddValue } from '../../helpers/element-action-utils.js';
-import employeeData from '../../helpers/employee-data.js';
 
 class EmployeeFunctionality {
   constructor(page) {
@@ -30,7 +29,7 @@ class EmployeeFunctionality {
   async searchEmployee({ firstName, lastName }) {
     await elementAddValue(this.employeePage.employeeNameInput, `${firstName} ${lastName}`);
     await elementClick(this.employeePage.searchButton);
-    await this.page.waitForTimeout(5000); //hard wait to allow search results to load
+    await this.employeePage.loadingSpinner.waitFor({ state: 'hidden' });
     await elementIsVisible(this.employeePage.employeeInResult(`${firstName} ${lastName}`));
   }
 

@@ -11,6 +11,7 @@ const DashboardPage = (page) => ({
   menuButton: (menu) => page.locator(
     `a:has-text("${menu}")`
   ),
+  
 });
 
 export default DashboardPage;

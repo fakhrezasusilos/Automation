@@ -1,4 +1,5 @@
 const LoginPage = (page) => ({
+  
   usernameInput: page.locator(
     'input[name="username"]'
   ),

@@ -3,7 +3,7 @@ const EmployeePage = (page) => ({
   EmployeeHeader: page.locator(
     'h6.oxd-topbar-header-breadcrumb-module'
   ),
-  //Filter Employees Locators
+
   employeeNameInput: page.locator(
     'input[placeholder="Type for hints..."]'
   ).first(),
@@ -66,7 +66,6 @@ const EmployeePage = (page) => ({
     'button:has-text("Save")'
   ),
 
-  //Employee Details Locators
   employeeNameHeader: (name) => page.locator(
     `h6.oxd-text.oxd-text--h6.oxd-text--strong:has-text("${name}")`
   ),
@@ -102,5 +101,6 @@ const EmployeePage = (page) => ({
   loadingSpinner: page.locator(
     '.oxd-loading-spinner'
   ),
+  
 });
 export default EmployeePage;

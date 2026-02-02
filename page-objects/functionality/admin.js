@@ -1,12 +1,12 @@
 import AdminPage from "../locator/AdminPage.js";
 import { elementAddValue, elementClick, elementIsVisible, elementGetText } from "../../helpers/element-action-utils.js";
-import { users } from "../../helpers/users.js";
-import employeeData from "../../helpers/staff-data.js";
+import EmployeePage from "../locator/EmployeePage.js";
 
 class AdminFunctionality {
   constructor(page) {
     this.page = page;
     this.adminPage = AdminPage(this.page);
+    this.employeePage = EmployeePage(this.page);
   }
 
   async isAdminHeaderVisible() {
@@ -53,7 +53,7 @@ class AdminFunctionality {
   async searchUser(username) {
     await elementAddValue(this.adminPage.usernameInput, username, 8000);
     await elementClick(this.adminPage.searchButton);
-    await this.page.waitForTimeout(5000); //hard wait to allow search results to load
+    await this.employeePage.loadingSpinner.waitFor({ state: 'hidden' });
   }
 
   async isUserVisibleInResult(username) {
