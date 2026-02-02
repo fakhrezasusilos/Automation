@@ -1,0 +1,23 @@
+Stored Cookie after login: orangehrm=2365vh6k04pqnia42hemhgq68c
+FILL VALUE: Auto_1770053385534
+FILL VALUE: User_1
+FILL VALUE: EMP1385534
+200
+Employee Details from API: {
+  data: [
+    {
+      empNumber: 227,
+      lastName: 'User_1',
+      firstName: 'Auto_1770053385534',
+      middleName: '',
+      employeeId: 'EMP1385534',
+      terminationId: null,
+      jobTitle: [Object],
+      subunit: [Object],
+      empStatus: [Object],
+      supervisors: []
+    }
+  ],
+  meta: { total: 1 },
+  rels: []
+}
