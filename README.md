@@ -152,7 +152,7 @@ The framework includes:
 - Screenshots & videos on failure
 - Test isolation & cleanup
 
-# Flaky Test Strategy
+## Flaky Test Strategy
 
 - Identify flaky tests via retries and CI history
 - Remove hard waits
