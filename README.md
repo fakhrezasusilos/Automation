@@ -77,7 +77,6 @@ Automated coverage includes the **complete employee lifecycle**:
 # Setup
 
 ```
-git clone
 git clone https://github.com/fakhrezasusilos/Automation.git
 cd Automation
 npm install
