@@ -87,26 +87,30 @@ npx playwright install
 
 Run all tests: 
 ```
-npm playwright test
+npm run test
 ```
 
 Run tests in specific environment:
 ```
-npm playwright test:prod
-npm playwright test:staging
-npm playwright test:dev
+npm run test:prod
+npm run test:staging
+npm run test:dev
 ```
 Run a specific test:
 ```
-npm playwright test tests/example.spec.js
+npm run test tests/example.spec.js
+```
+Run Flaky Test or by tags :
+```
+npx playwright test --grep "@tags"
 ```
 Generates Allure Reports :
 ```
-npm playwright allure:generate
+npm run allure:generate
 ```
 Open Allure Reports :
 ```
-npm playwright allure:open
+npm run allure:open
 ```
 
 ## Environment Configuration
