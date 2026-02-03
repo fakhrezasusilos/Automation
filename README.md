@@ -113,6 +113,22 @@ Open Allure Reports :
 npm run allure:open
 ```
 
+# Performance Test by K6
+
+Test login-test.js and generate report
+```
+K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=login-dashboard.html k6 run login-test.js
+```
+Test employee-test.js and generate report
+```
+K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=employee-dashboard.html k6 run employee-test.js
+
+```
+Open Report :
+```
+open login-dashboard.html
+```
+
 ## Environment Configuration
 
 This Project support multiple environment using multiple ```.env``` files
